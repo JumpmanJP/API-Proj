@@ -1,6 +1,6 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: aqua;
+    background-color: grey;
   }
   
   .wrapper {
@@ -69,4 +69,11 @@ body {
     background-color: #ccc;
     padding: 5px;
     margin: 5px;
+  }
+
+  section {
+    background-color: darkgray;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif
+    
   }
