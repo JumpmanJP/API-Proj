@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "jsaug19api"
+    "default": "jsaug19api",
+    "jsaug19api": "jsaug19api"
   }
 }
