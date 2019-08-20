@@ -81,6 +81,8 @@ if(recipes.length === 0) {
         let img = document.createElement('img');
         let clearfix = document.createElement('div'); 
 
+        clearfix.setAttribute('class' , 'column');
+
         // let current = json.recipe;
         // console.log("current:", current);
 
@@ -101,9 +103,10 @@ if(recipes.length === 0) {
             heading.href = recipes[i].recipe.url
             article.textContent = recipes[i].recipe.ingredients[0].text
         // }
-        section.appendChild(heading);
-        section.appendChild(img);
-        section.appendChild(article);
+        section.appendChild(clearfix);
+        clearfix.appendChild(heading);
+        clearfix.appendChild(img);
+        clearfix.appendChild(article);
 
       
 }}}

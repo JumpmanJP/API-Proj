@@ -1,6 +1,6 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: grey;
+    background-color: rgb(75, 71, 71);
   }
   
   .wrapper {
@@ -20,13 +20,17 @@ body {
   
   h1 {
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
   }
   
   h2 {
     font-size: 40px;
   }
+
+
   
-  article p {
+  /* article p {
     font-size: 14px;
     line-height: 1.5;
   }
@@ -34,36 +38,40 @@ body {
   article p:nth-of-type(2) {
     font-size: 14px;
     line-height: 2;
-  }
+  } */
   
   nav {
     margin-bottom: 50px;
   }
   
-  .prev {
+  /* .prev {
     float: left;
   }
   
   .next {
     float: right;
-  }
+  } */
   
-  article {
-    padding: 10px;
+  menu {
+    padding: 40px;
     margin-bottom: 20px;
-    background-color: #ddd;
-    border: 1px solid #ccc;
+    background-color: rgb(221, 221, 221);
+    border: 3px solid black;
+    /* align-content: center;
+    align-self: center;
+    flex-direction: column;
+    justify-content: space-between; */
   }
   
   img {
-    float: right;
+    float: center;
     margin-left: 20px;
     max-width: 200px;
   }
   
-  .clearfix {
+  /* .clearfix {
     clear: both;
-  }
+  } */
   
   span {
     background-color: #ccc;
@@ -71,9 +79,24 @@ body {
     margin: 5px;
   }
 
-  section {
+  /* section {
     background-color: darkgray;
-    align-items: center;
-    font-family: Georgia, 'Times New Roman', Times, serif
+    align-items: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 50vw;
     
-  }
+  } */
+
+  section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+​
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
