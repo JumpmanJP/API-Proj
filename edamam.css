@@ -1,6 +1,11 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(75, 71, 71);
+    /* background-image: url(./assets/brunch-delicious-dining-1426715.jpg) */
+    background: url(./assets/background-chillies-color-1435895.jpg) center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
   }
   
   .wrapper {
@@ -21,11 +26,16 @@ body {
   h1 {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 40px;
+    font-size: 80px;
   }
   
   h2 {
     font-size: 40px;
+  }
+
+  .submit:hover {
+    color: red;
+    font-size: 20px;
   }
 
 
@@ -55,7 +65,7 @@ body {
   menu {
     padding: 40px;
     margin-bottom: 20px;
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(129, 12, 12);
     border: 3px solid black;
     /* align-content: center;
     align-self: center;
@@ -65,8 +75,10 @@ body {
   
   img {
     float: center;
-    margin-left: 20px;
-    max-width: 200px;
+    /* margin-left: 20px; */
+    max-width: 300px;
+    border: 10px;
+    border-color: black;
   }
   
   /* .clearfix {
@@ -90,13 +102,63 @@ body {
   section {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     flex-wrap: wrap;
     width: 100vw;
 }
 ​
 .column {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     flex-basis: 100%;
     flex: 1;
+    align-self: flex-end;
+    align-content: center;
 }
+
+.apiHeading {
+  /* text-align: center; */
+  text-decoration: none;
+  align-content: top;
+  font-size: 20px;
+}
+
+.apiImg {
+  align-self: flex-end;
+  align-content: center;
+  border: 5px;
+  border-color: black;
+
+}
+
+.apiArticle {
+ align-self: flex-end;
+    align-content: center;
+    font-size: 30px;
+}
+
+div {
+  width: 450px;
+  text-align: center;
+  height: 500px;
+
+}
+
+/* section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+​
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+} */
+

@@ -80,9 +80,12 @@ if(recipes.length === 0) {
         let article = document.createElement('article');
         let img = document.createElement('img');
         let clearfix = document.createElement('div'); 
+        let div = document.createElement('div');
 
         clearfix.setAttribute('class' , 'column');
-
+        heading.setAttribute('class', 'apiHeading');
+        img.setAttribute('class', 'apiImg');
+        article.setAttribute('class', 'apiArticle')
         // let current = json.recipe;
         // console.log("current:", current);
 
@@ -96,17 +99,22 @@ if(recipes.length === 0) {
         // }
         // if(current.multimedia.length > 0) {
             // img.src = 'https://api.edamam.com/search' + current.image[0].url;
-            img.src = recipes[i].recipe.image
-            img.alt = 'picture'
-
+            
             heading.textContent = recipes[i].recipe.label
             heading.href = recipes[i].recipe.url
             article.textContent = recipes[i].recipe.ingredients[0].text
-        // }
+            img.src = recipes[i].recipe.image
+            img.alt = 'picture'
+            // }
         section.appendChild(clearfix);
-        clearfix.appendChild(heading);
-        clearfix.appendChild(img);
-        clearfix.appendChild(article);
+        clearfix.appendChild(div);
+        // clearfix.appendChild(heading);
+        // clearfix.appendChild(img);
+        // clearfix.appendChild(article);
+        div.appendChild(heading);
+        div.appendChild(img);
+        div.appendChild(article);
+
 
       
 }}}
